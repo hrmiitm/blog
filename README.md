@@ -76,4 +76,4 @@ The first visit follows the device color preference. The header button switches 
 
 ## First article
 
-[The Web Has a Memory](content/posts/2026/save-a-page-before-it-disappears.md) explains how to find and save pages, with seven archiving options. Sources were reviewed on 28 October 2026; no archive requests were made on the reader's behalf. Service descriptions are documentation-based, not a comparative capture benchmark.
+[The Web Has a Memory](content/posts/2026/the-web-has-a-memory.md) explains how to find and save pages, with an SVG explainer and a table of additional online tools. The former post URL redirects to `/blog/posts/the-web-has-a-memory/`. Sources were reviewed on 28 October 2026; no archive requests were made on the reader's behalf. Service descriptions are documentation-based, not a comparative capture benchmark.

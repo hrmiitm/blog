@@ -544,7 +544,7 @@ h3 {
 .prose table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.65;
   margin: 25px 0 32px;
 }
@@ -552,7 +552,7 @@ h3 {
   text-align: left;
   color: var(--accent);
   font-weight: 600;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
@@ -587,6 +587,8 @@ h3 {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 30px auto;
+  border-radius: 8px;
 }
 .toc {
   align-self: start;
@@ -857,14 +859,14 @@ h3 {
     margin-top: 34px;
   }
   .prose table {
-    font-size: 10px;
+    font-size: 12px;
   }
   .prose th,
   .prose td {
     padding: 10px 6px;
   }
   .prose th {
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 0;
   }
   .article-end {

@@ -1,7 +1,8 @@
 ---
 title: "The Web Has a Memory"
 date: 2026-10-28T18:00:00+05:30
-slug: "save-a-page-before-it-disappears"
+slug: "the-web-has-a-memory"
+aliases: ["/posts/save-a-page-before-it-disappears/"]
 description: "Where to find pages that disappeared, and how to save the ones search engines haven't found."
 tags: ["Web archiving", "Useful tools"]
 art: "archive"
@@ -13,6 +14,8 @@ draft: false
 You follow a link in an old blog post and get a 404. The site is gone. The article you wanted might still be sitting in a web archive.
 
 Someone had to save it while it was there. Sometimes that someone is an automatic crawler. Sometimes it's a reader who pastes a URL into a box.
+
+![A bookmark keeps the address and depends on the live page. An archive keeps a captured version that can survive changes to the original.](../../images/the-web-has-a-memory/bookmark-or-archive.svg)
 
 ## Look for a saved copy
 
@@ -37,3 +40,17 @@ For pages that need scrolling or clicking, [ArchiveWeb.page](https://archiveweb.
 If you're preserving a whole collection, [Browsertrix](https://webrecorder.net/browsertrix/) offers automated browser-based crawling. [Archive-It](https://archive-it.org/) is the Internet Archive's subscription service for organizations maintaining curated collections.
 
 For one article, start with a single-page capture. Open the saved copy, find the paragraph or image you wanted, and keep its archive link beside the original. An archived login screen won't be much help later.
+
+## More tools to try
+
+These cover different jobs. A screenshot records appearance; a web archive may also preserve text, links, and other resources.
+
+| Tool | Useful for | Know before using |
+| --- | --- | --- |
+| [Arquivo.pt](https://arquivo.pt/services/archivepagenow?l=en) | Requesting a capture with ArchivePageNow; searching older pages | New captures are later added to its archive collection. |
+| [archive.st](https://archive.st/faq) | A public page snapshot, screenshot, and shareable link | Free public captures need no account. Long-term storage is not guaranteed. |
+| [Stillio](https://www.stillio.com/) | Taking dated screenshots on a schedule | A paid screenshot service, rather than an interactive page replay. |
+| [Pagefreezer](https://www.pagefreezer.com/website-archiving/) | Maintaining a searchable website archive over time | An organizational service with custom pricing and setup. |
+| [Urlbox](https://urlbox.com/) | Automating full-page screenshots through an API | A capture tool; arrange storage for the results yourself. |
+
+Details checked against the linked official pages on 28 October 2026.
