@@ -220,6 +220,7 @@ h3 {
   color: var(--accent);
 }
 .intro-description {
+  max-width: 430px;
   font-size: 17px;
   line-height: 1.8;
   color: var(--muted);
@@ -738,9 +739,6 @@ h3 {
   }
   .intro-description {
     font-size: 14px;
-  }
-  .desktop-break {
-    display: none;
   }
   .section-label {
     padding-top: 20px;
