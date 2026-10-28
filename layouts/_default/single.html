@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $showTOC := and (eq .Section "posts") (ne .Params.toc false) .TableOfContents }}
 <div class="shell article-shell">
   <a class="back-link" href="{{ `posts/` | relURL }}"><span aria-hidden="true">←</span> All notes</a>
   <header class="article-header">
@@ -7,11 +8,11 @@
     {{ with .Description }}<p class="article-description">{{ . }}</p>{{ end }}
     {{ if eq .Section "posts" }}<div class="post-meta"><span>By {{ site.Params.author }}</span><span aria-hidden="true">/</span><time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format "02 Jan 2006" }}</time><span aria-hidden="true">/</span><span>{{ .ReadingTime }} min read</span></div>{{ end }}
   </header>
-  <div class="article-grid{{ if ne .Section `posts` }} no-toc{{ end }}">
+  <div class="article-grid{{ if not $showTOC }} no-toc{{ end }}">
     <article class="prose">{{ .Content }}
     {{ if eq .Section "posts" }}<div class="article-end"><span class="end-mark" aria-hidden="true">✳</span><p>Thanks for reading.<br><a href="{{ `index.xml` | relURL }}">Get the next note via RSS ↗</a></p></div>{{ end }}
     </article>
-    {{ if and (eq .Section "posts") .TableOfContents }}<aside class="toc"><details open><summary>On this page</summary>{{ .TableOfContents }}</details><p class="toc-note">{{ with .Params.verified }}Sources checked<br>{{ time.Format "02 Jan 2006" . }}{{ end }}</p></aside>{{ end }}
+    {{ if $showTOC }}<aside class="toc"><details open><summary>On this page</summary>{{ .TableOfContents }}</details><p class="toc-note">{{ with .Params.verified }}Sources checked<br>{{ time.Format "02 Jan 2006" . }}{{ end }}</p></aside>{{ end }}
   </div>
 </div>
 {{ end }}

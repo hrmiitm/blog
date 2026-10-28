@@ -29,7 +29,7 @@ draft: true
 
 Write Markdown below the front matter. Use H2 headings for main sections; the article contents are generated automatically. Set the date to your intended publication time and `draft: false` when ready. Future-dated posts are not published until a build runs after that date. Workflows run on pushes and manual dispatch, not on a schedule.
 
-Time-sensitive guides can include `verified: "YYYY-MM-DD"`. Put supporting images in `static/images/your-post/`. Templates accept an optional `art: "archive"` for the existing archive illustration; omit it for other subjects. Tags are displayed as labels; no empty tag archives are generated.
+Time-sensitive guides can include `verified: "YYYY-MM-DD"`. Short posts can set `toc: false` to hide the table of contents. Put supporting images in `static/images/your-post/`. Templates accept an optional `art: "archive"` for the existing archive illustration; omit it for other subjects. Tags are displayed as labels; no empty tag archives are generated.
 
 Before publishing:
 
@@ -76,4 +76,4 @@ The first visit follows the device color preference. The header button switches 
 
 ## First article
 
-[Save a Page Before It Disappears](content/posts/2026/save-a-page-before-it-disappears.md) compares seven archiving options. Sources were reviewed on 28 October 2026; no archive requests were made on the reader's behalf. Service descriptions are documentation-based, not a comparative capture benchmark.
+[The Web Has a Memory](content/posts/2026/save-a-page-before-it-disappears.md) explains how to find and save pages, with seven archiving options. Sources were reviewed on 28 October 2026; no archive requests were made on the reader's behalf. Service descriptions are documentation-based, not a comparative capture benchmark.
