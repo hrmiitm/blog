@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="shell">
+  <section class="intro" aria-labelledby="intro-title">
+    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A personal notebook</p>
+    <h1 id="intro-title">Good things,<br><em>worth keeping.</em></h1>
+    <p class="intro-description">Notes on the web, useful tools, and things<br class="desktop-break"> worth understanding. By <a href="{{ `about/` | relURL }}">hrmiitm</a>.</p>
+  </section>
+  <section class="notes-section" aria-labelledby="latest-title">
+    <div class="section-label"><h2 id="latest-title">Latest notes</h2><span>{{ len (where site.RegularPages "Section" "posts") }} published {{ if eq (len (where site.RegularPages "Section" "posts")) 1 }}note{{ else }}notes{{ end }}</span></div>
+    {{ range where site.RegularPages "Section" "posts" }}{{ partial "post-card.html" . }}{{ end }}
+  </section>
+  <aside class="subscribe-note"><span class="small-cross" aria-hidden="true">+</span><p>A slower feed, whenever there’s something to share.<br><a href="{{ `index.xml` | relURL }}">Follow along with RSS <span aria-hidden="true">↗</span></a></p></aside>
+</div>
+{{ end }}

@@ -1,0 +1,30 @@
+baseURL = 'https://hrmiitm.github.io/blog/'
+locale = 'en'
+title = 'hrmiitm / notes'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+summaryLength = 30
+
+[params]
+  author = 'hrmiitm'
+  description = 'Notes on the web, useful tools, and things worth understanding.'
+  github = 'https://github.com/hrmiitm/blog'
+
+[permalinks]
+  posts = '/posts/:slug/'
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 2
+
+[markup.highlight]
+  noClasses = false
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[services.rss]
+  limit = 30

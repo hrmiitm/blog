@@ -1,0 +1,16 @@
+<article class="post-card">
+  <div class="card-copy">
+    <div class="post-meta"><time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format "02 Jan 2006" }}</time><span aria-hidden="true">/</span><span>{{ .ReadingTime }} min read</span></div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Description }}</p>
+    <div class="card-bottom"><div class="tags">{{ range .Params.tags }}<span>{{ . }}</span>{{ end }}</div><a class="read-link" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read the note <span aria-hidden="true">↗</span></a></div>
+  </div>
+  {{ if eq .Params.art "archive" }}
+  <a class="archive-art" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+    <div class="art-grid"></div><span class="art-label">A little less ephemeral.</span>
+    <div class="paper paper-back"></div><div class="paper paper-middle"></div>
+    <div class="paper paper-front"><span class="paper-browser"><i></i><i></i><i></i></span><span class="paper-title">The web<br>has a memory.</span><span class="paper-line"></span><span class="paper-line short"></span><span class="paper-stamp">SAVED COPY <span>↗</span></span></div>
+    <span class="art-caption">CAPTURE / KEEP / REVISIT</span>
+  </a>
+  {{ end }}
+</article>

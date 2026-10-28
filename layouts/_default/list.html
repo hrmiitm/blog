@@ -1,0 +1,3 @@
+{{ define "main" }}
+<div class="shell archive-page"><p class="eyebrow">The notebook</p><h1>All notes<span class="title-period">.</span></h1><p class="archive-description">Useful discoveries, saved in one place.</p><section class="notes-section" aria-label="Published notes">{{ range .RegularPages }}{{ partial "post-card.html" . }}{{ end }}</section></div>
+{{ end }}
